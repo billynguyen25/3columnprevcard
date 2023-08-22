@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 65%;
+    margin-bottom: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+}
+
+.container{
+    width: 80%;
+}
+
+.learnButton{
+    text-decoration: none;
+    background-color: white;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 1.5rem;
+}
+
+.section1{
+    padding: 10%;
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: inherit;
+    line-height: 1.6rem;
+    border-radius: 1rem 1rem 0 0;
+    padding-bottom: 50px;
+}
+
+.section1 h1{
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 14%;
+    padding-top: 15%;
+}
+
+.section1 p{
+    padding-bottom: 35px;
+}
+
+.section1 .learnButton{
+    color: hsl(31, 77%, 52%);
+}
+
+.section2{
+    padding: 10%;
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: inherit;
+    line-height: 1.6rem;
+    padding-bottom: 50px;
+}
+
+.section2 h1{
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 14%;
+    padding-top: 15%;
+}
+
+.section2 p{
+    padding-bottom: 35px;
+}
+
+.section2 .learnButton{
+    color: hsl(184, 100%, 22%);
+}
+
+.section3{
+    padding: 10%;
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: inherit;
+    line-height: 1.6rem;
+    padding-bottom: 50px;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.section3 h1{
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 14%;
+    padding-top: 15%;
+}
+
+.section3 p{
+    padding-bottom: 35px;
+}
+
+.section3 .learnButton{
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution{ 
+    font-size: 11px; text-align: center; 
+    padding-top: 5%;
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width:700px){
+
+    body{
+        margin: 0 10% 0 10%; 
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .section1{
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .section3{
+        border-radius: 0 1rem 1rem 0;
+    }
+
+}
